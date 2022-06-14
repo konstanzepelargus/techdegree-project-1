@@ -7,9 +7,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: rgb(246, 242, 232);
 }
 /* Link Styles */
 
@@ -52,15 +52,15 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/atlanta.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 header {
   line-height: 1.5;
@@ -70,15 +70,16 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 2px solid mistyrose;
+  transition: all 0.4s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.4) rotate(7deg);
 }
 .tag {
   background-color: #efefef;
   color: black;
+  opacity: 0.85;
   padding: 10px;
   border-radius: 5px;
   display: table;
@@ -86,20 +87,57 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  opacity: 0.85;
+  color: lightcoral;
 }
 .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
+  margin: 40px;
+  padding: 40px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: lightcoral;
+}
+
+.card-interests {
+  margin: 40px;
+  padding: 40px 40px 40px;
+  max-width: 800px;
+  text-align: center;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card-interests:hover {
+  border-color: lightcoral;
+}
+
+main .yoga-image {
+  display:inline-block;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 45px;
+  width: 200px;
+  height: 150px;
+  border: 2px solid mistyrose;
+}
+
+main .kittens-image {
+  display:inline-block;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 45px;
+  margin-right: auto;
+  width: 200px;
+  height: 150px;
+  border: 2px solid mistyrose;
 }
 
 ul.skills {
@@ -110,14 +148,27 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: lightcoral;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: rgb(95, 73, 139);
+}
+
+.interests li {
+  border-radius: 6px;
+  display: inline-block;
+  background: lightcoral;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.interests li:nth-child(odd) {
+  background: rgb(95, 73, 139);
 }
 
 footer {
@@ -174,7 +225,7 @@ a.social:hover {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
-      -ms-flex-pack: distribute;
+      -ms-flex-pack:distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
